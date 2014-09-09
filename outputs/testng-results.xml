@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="17" started-at="2014-09-09T08:32:22Z" finished-at="2014-09-09T08:32:22Z">
+    <groups>
+      <group name="windows">
+        <method signature="TestNGTest.gWindows()[pri:0, instance:com.hawk.testng.TestNGTest@1cb8deef]" name="gWindows" class="com.hawk.testng.TestNGTest"/>
+      </group> <!-- windows -->
+      <group name="linux">
+        <method signature="TestNGTest.gLinux()[pri:0, instance:com.hawk.testng.TestNGTest@1cb8deef]" name="gLinux" class="com.hawk.testng.TestNGTest"/>
+      </group> <!-- linux -->
+    </groups>
+    <test name="Command line test" duration-ms="17" started-at="2014-09-09T08:32:22Z" finished-at="2014-09-09T08:32:22Z">
+      <class name="com.hawk.testng.TestNGTest">
+        <test-method status="PASS" signature="gLinux()[pri:0, instance:com.hawk.testng.TestNGTest@1cb8deef]" name="gLinux" duration-ms="6" started-at="2014-09-09T16:32:22Z" finished-at="2014-09-09T16:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gLinux -->
+        <test-method status="PASS" signature="gWindows()[pri:0, instance:com.hawk.testng.TestNGTest@1cb8deef]" name="gWindows" duration-ms="1" started-at="2014-09-09T16:32:22Z" finished-at="2014-09-09T16:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gWindows -->
+        <test-method status="FAIL" signature="test(java.lang.String)[pri:0, instance:com.hawk.testng.TestNGTest@1cb8deef]" name="test" duration-ms="0" started-at="2014-09-09T16:32:22Z" finished-at="2014-09-09T16:32:22Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'p' is required by @Test on method test but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'p' is required by @Test on method test but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- com.hawk.testng.TestNGTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
